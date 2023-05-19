@@ -1,0 +1,186 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* CSS reset */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Global variable */
+:root{
+  --sideBGcolor:#5077FF;
+  --themeColor:#FBD758;
+  --textColor:#353535;
+  --iconBGcolor:#2c2f3f;
+  --bgColor:#f7f7f7;
+}
+
+
+/* container section */
+body {
+  background-color: #FFFFFF;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+
+}
+
+header {
+  background-color: rgb(18, 18, 99);
+  height: auto;
+}
+
+nav div a {
+  text-decoration: none;
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+nav {
+  background-color: rgb(88, 37, 37);   
+  display: flex;
+justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;  
+  margin-left: 200px;
+}
+nav ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+button {
+  background-color: var(--themeColor);
+  padding: 14px 44px;
+  border-radius: 7px;
+  border-style: none;
+}
+button a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.marquee_text {
+  background-color: pink;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.marquee_text p {
+  font-size: 40px;
+  font-weight: 800;
+}
+.marquee_text div {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgb(192, 192, 192);
+  margin: 0 10px;
+}
+
+
+/*================== END OF HEADER =============*/
+
+main {
+  background-color: coral;
+  height: auto;
+}
+
+.hero_section {
+  background-color: blueviolet;
+  height: 800px;
+  text-align: center;
+}
+.gallery_container {
+  position: relative;
+  display: block;
+}
+.gallery_1, .gallery_2, .gallery_3, .gallery_4, .gallery_5, .gallery_6, .gallery_7 {
+  position: absolute;
+  border-radius: 50%;
+}
+.gallery_1 {
+  background-color: rebeccapurple;
+  right: 100px;
+  height: 200px;
+  width: 200px;
+}
+.gallery_2 {
+  background-color: red;
+  right: 450px;
+  top: 25px;
+  height: 200px;
+  width: 200px;
+}
+.gallery_3 {
+  background-color: skyblue;
+  right: 350px;
+  top: 180px;
+  height: 200px;
+  width: 200px;
+}
+.gallery_4 {
+  right: 650px;
+  top: 200px;
+  background-color: aqua;
+  height: 200px;
+  width: 200px;
+}
+.gallery_5 {
+  top: 10px;
+  right: 700px;
+  background-color: greenyellow;
+  height: 200px;
+  width: 200px;
+}
+.gallery_6 {
+  top: 100px;
+  background-color: rgb(65, 73, 52);
+  height: 200px;
+  width: 200px;
+}
+.gallery_7 {
+  top: 190px;
+  right: 40px;
+  background-color: rgb(143, 92, 26);
+  height: 200px;
+  width: 200px;
+}
+
+.sometext {
+  height: 80px;
+  background-color: #000;
+}
+
+.projects_section {
+  background-color: goldenrod;
+  height: 300px;
+}
+
+footer {
+  background-color: greenyellow;
+  height: 100px;
+}
+
+h1 {
+  font-size: 44px;
+  padding-left: 200px;
+  padding-right: 200px;
+
+}
