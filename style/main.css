@@ -197,13 +197,133 @@ main {
 
 .projects_section {
   background-color: goldenrod;
+  height: 1000px;
+  text-align: center;  
+  border-bottom: 3px solid #000;
+}
+.projects_section .title {
+  background-color: lightcoral;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 0 250px;
+}
+.project_gallery {
+  position: relative;
+}
+.project_1 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rebeccapurple;
+  right: 100px;
   height: 300px;
+  width: 300px;
+  top: 10px;
+  right: 40px;
+}
+.project_2 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(204, 71, 48);
+  right: 100px;
+  height: 300px;
+  width: 300px;
+  top: 20px;
+  right: 700px;
+}
+.project_3 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(48, 110, 204);
+  right: 100px;
+  height: 300px;
+  width: 300px;
+  top: 120px;
+  right: 370px;
+}
+
+.project_4 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(194, 204, 48);
+  right: 100px;
+  height: 300px;
+  width: 300px;
+  top: 420px;
+  right: 570px;
+}
+
+.project_5 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(186, 175, 204);
+  right: 100px;
+  height: 300px;
+  width: 300px;
+  top: 420px;
+  right: 100px;
+}
+
+.button_project {
+  position: absolute;
+  background-color: #FBD758;
+  top: 780px;
+  right: 780px;
+  padding: 14px 44px;
+  border-radius: 7px;
+}
+.button_project a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
   
 }
 
+/*======= END OF PROJECT SECTION ========*/
+
+.clients_section .title {
+  display: block;
+  padding-left: 400px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.clients_section div {
+  display: block;
+  padding-left: 400px;
+}
+.clients_section .my_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.my_table td {
+  border: 1px solid #000;
+  padding: 20px 10px;
+}
+.clients_section .comment {
+  font-size: 18px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  margin-left: 350px;
+  padding: 15px 171px 15px 0;
+
+}
+
+
+
 footer {
   background-color: greenyellow;
-  height: 100px;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer div ul {
+  list-style: none;
+}
+footer div ul li a {
+  text-decoration: none;
+  color: #000;
 }
 
 h1 {
