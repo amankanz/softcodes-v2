@@ -501,24 +501,7 @@ main {
 /*===== END OF CONTACT PAGE =====*/
 
 
-
-/*====== TRANSITIONNING ======*/
-/* .page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: transform 1000ms ease-in-out;
-}
-
-.hidden {
-  transform: translateX(-100%);
-} */
-
-/*====== TRANSITIONNING END ======*/
-
-
+/*=== BOX ANIMATION ===*/
 .box {
   
   animation: move 15s infinite;
@@ -532,4 +515,129 @@ main {
   100% { transform: translate(0, 0); }
 }
 
+/*=== END OF BOX ANIMATION ===*/
+
+
+
+/*===== SERVICE PAGE =====*/
+
+aside {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  /* position: fixed;
+  z-index: 99; */
+}
+aside .filter_text {
+  font-size: 18px;
+  font-weight: 500;
+}
+aside .filter_list {
+  margin-left: 35px;
+  margin-top: 20px;
+}
+aside .filter_list ul {
+  list-style: none;
+  line-height: 30px;
+}
+aside .filter_list ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14.69px;
+  transition: 0.4s;
+}
+aside .filter_list ul li a:hover {
+  color: var(--sideBGcolor);
+  border-bottom: 1px solid var(--themeColor);
+}
+/*=== END OF SIDEBAR FILTER SECTION ===*/
+
+.serivice_section {
+  background-color: aqua;
+  width: auto;
+  position: relative;
+
+}
+
+/*=== START ROW ONE ======*/
+.container_row1 {
+  background-color: lightgreen;
+  display: flex;
+  margin-left: 425px;
+}
+.serivice_section .ellipse {
+  background-color: #FBD758;
+  height: 189px;
+  width: 189px;
+  border-radius: 50%;
+}
+.serivice_section .container_row1 .box_1 {
+  background-color: red;
+  border-bottom: 2px solid #000;
+  width: 325px;
+}
+.container_row1 .box_1 ul {
+  background-color: #FBD758;
+  margin-top: 130px;
+  line-height: 35px;
+  letter-spacing: 4px;
+  position: absolute;
+  right: 310px;
+}
+.container_row1 .box_1 ul li {
+  font-size: 25px;
+  list-style: none;
+}
+.container_row1 .box_1 ul li:last-child {
+  font-size: 20px;
+}
+.serivice_section .container_row1 .box_2 {
+  background-color: lightskyblue;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 25px  0;
+}
+.serivice_section .container_row1 .box_2 p {
+  font-size: 18px;
+  padding-left: 30px;
+  margin-top: 15px;
+}
+.serivice_section .container_row1 .box_2 .ellipse {
+  margin-left: 50px;
+  margin-right: 30px;
+}
+/*=== END OF ROW ONE ===*/
+
+/*=== START OF ROW TWO ===*/
+.container_row2 {
+  background-color: lightgreen;
+  display: flex;
+  margin-left: 440px;
+}
+.serivice_section .container_row2 .box_2 {
+  background-color: red;
+  border-bottom: 2px solid #000;
+  width: auto;
+}
+.serivice_section .container_row2 .box_2 {
+  background-color: lightskyblue;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 25px  0;
+}
+.serivice_section .container_row2 .box_2 p {
+  font-size: 18px;
+  padding-left: 30px;
+  margin-top: 15px;
+}
+.serivice_section .container_row2 .box_2 .ellipse {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/*=== END OF ROW TWO ===*/
+
+
+/*===== END OF SERVICE PAGE =====*/
 
