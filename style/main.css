@@ -163,16 +163,16 @@ main {
 .gallery_2 {
   background-color: red;
   right: 450px;
-  top: 25px;
-  height: 200px;
-  width: 200px;
+  top: 15px;
+  height: 240px;
+  width: 240px;
 }
 .gallery_3 {
   background-color: skyblue;
-  right: 350px;
-  top: 280px;
-  height: 180px;
-  width: 180px;
+  right: 150px;
+  top: 380px;
+  height: 280px;
+  width: 280px;
 }
 .gallery_4 {
   right: 550px;
@@ -183,10 +183,10 @@ main {
 }
 .gallery_5 {
   top: 10px;
-  right: 700px;
+  right: 750px;
   background-color: greenyellow;
-  height: 300px;
-  width: 300px;
+  height: 270px;
+  width: 270px;
 }
 .gallery_6 {
   top: 300px;
@@ -194,13 +194,7 @@ main {
   height: 200px;
   width: 200px;
 }
-.gallery_7 {
-  top: 350px;
-  right: 30px;
-  background-color: rgb(143, 92, 26);
-  height: 260px;
-  width: 260px;
-}
+
 /*==== END OF GALLERY SECTION ===*/
 
 .introtext {
@@ -495,6 +489,8 @@ main {
 .reachout_link ul li a:hover {
   border-bottom: 1px solid #000;
 }
+
+
 /*===== END OF CONTACT PAGE =====*/
 
 
