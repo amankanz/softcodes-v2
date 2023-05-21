@@ -1,5 +1,5 @@
 /* Google font */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* CSS reset */
 *{
@@ -29,6 +29,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1024px;
+  overflow: hidden;
 
 }
 
@@ -52,56 +53,85 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  align-items: center;  
+  align-items: center;
   margin-left: 150px;
 }
-nav ul li {
+
+
+nav ul li a {
   padding-left: 10px;
   padding-right: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+  transition: 0.4s;
 }
-nav ul li a {
+nav ul li a:hover {
+  color: var(--sideBGcolor);
+}
+
+.hireUs a {
   text-decoration: none;
   color: #000;
-}
-button {
+  font-size: 16px;
+  font-weight: 500;
   background-color: var(--themeColor);
   padding: 14px 44px;
   border-radius: 7px;
   border-style: none;
+  transition: 0.4s;
 }
-button a {
-  text-decoration: none;
-  color: #000;
-  font-size: 16px;
-  font-weight: 600;
+.hireUs a:hover {
+  background-color: var(--sideBGcolor);
+  color: var(--bgColor);
 }
 
 
 /*=== START OF MARQUEE CONTAINER ===*/
 .marquee_container {
   overflow: hidden;
-  white-space: nowrap;
   height: 100%;
   display: flex;
 }
 .marquee_text {
-  background-color: pink;
+  white-space: nowrap;
   height: auto;
   display: flex;
   align-items: center;
+  animation: marquee 20s linear infinite;
+  font-size: 40px;
+  color: var(--textColor);
 }
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 
 .marquee_text p {
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  letter-spacing: 4px;
+  -webkit-text-stroke: 1px #000;
+  color: #FFFFFF;
 }
 .marquee_text div {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
-  background-color: rgb(143, 17, 17);
-  margin: 0 10px;
+  background-color: var(--sideBGcolor);
+  margin: 0 35px;
+}
+.marquee_text div .second_start {
+  background-color: #FFFFFF;
 }
 /*=== END OF MARQUEE CONTAINER ===*/
 
@@ -127,8 +157,8 @@ main {
 .gallery_1 {
   background-color: rebeccapurple;
   right: 100px;
-  height: 200px;
-  width: 200px;
+  height: 280px;
+  width: 280px;
 }
 .gallery_2 {
   background-color: red;
@@ -140,43 +170,42 @@ main {
 .gallery_3 {
   background-color: skyblue;
   right: 350px;
-  top: 180px;
-  height: 200px;
-  width: 200px;
+  top: 280px;
+  height: 180px;
+  width: 180px;
 }
 .gallery_4 {
-  right: 650px;
-  top: 200px;
+  right: 550px;
+  top: 370px;
   background-color: aqua;
-  height: 200px;
-  width: 200px;
+  height: 260px;
+  width: 260px;
 }
 .gallery_5 {
   top: 10px;
   right: 700px;
   background-color: greenyellow;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
 .gallery_6 {
-  top: 100px;
+  top: 300px;
   background-color: rgb(65, 73, 52);
   height: 200px;
   width: 200px;
 }
 .gallery_7 {
-  top: 190px;
-  right: 40px;
+  top: 350px;
+  right: 30px;
   background-color: rgb(143, 92, 26);
-  height: 200px;
-  width: 200px;
+  height: 260px;
+  width: 260px;
 }
 /*==== END OF GALLERY SECTION ===*/
 
 .introtext {
   height: auto;
-  background-color: pink;
-  border-bottom: 3px solid #000;
+  border-bottom: 1px solid #000;
   padding: 30px 0;
 }
 .introtext div {
@@ -197,23 +226,39 @@ main {
   margin: 20px 0;
 
 }
-.introtext button {
+.button_itro {
+
   margin-left: 280px;
 }
+.button_itro a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--themeColor);
+  transition: 0.4s;
+  padding: 14px 44px;
+  border-radius: 7px;
+  
+}
+.button_itro a:hover {
+  background-color: var(--sideBGcolor);
+  color: var(--bgColor);
+}
+
+
 /*=========== END OF INTROTEXT ================*/
 
 /*===== START OF PROJECT SECTION =======*/
 .projects_section {
-  background-color: goldenrod;
   height: 1000px;
   text-align: center;  
-  border-bottom: 3px solid #000;
+  border-bottom: 1px solid #000;
 }
 .projects_section .title {
-  background-color: lightcoral;
   font-size: 50px;
   font-weight: 600;
-  padding: 0 250px;
+  padding: 25px 250px 0 250px;
 }
 .project_gallery {
   position: relative;
@@ -273,19 +318,26 @@ main {
 
 .button_project {
   position: absolute;
-  background-color: #FBD758;
   top: 780px;
   right: 780px;
-  padding: 14px 44px;
-  border-radius: 7px;
+  
 }
 .button_project a {
   text-decoration: none;
   color: #000;
   font-size: 16px;
   font-weight: 600;
+  background-color: var(--themeColor);
+  transition: 0.4s;
+  padding: 14px 44px;
+  border-radius: 7px;
   
 }
+.button_project a:hover {
+  background-color: var(--sideBGcolor);
+  color: var(--bgColor);
+}
+
 
 /*======= END OF PROJECT SECTION ========*/
 
@@ -293,26 +345,25 @@ main {
 /*=== START OF CLIENTS SECTION ======*/
 .clients_section .title {
   display: block;
-  padding-left: 400px;
+  padding-left: 350px;
   padding-top: 20px;
   margin-bottom: 20px;
   font-size: 20px;
 }
 .clients_section div {
-  display: block;
-  padding-left: 400px;
+  padding-left: 350px;
 }
 .clients_section .my_table {
   width: 100%;
   border-collapse: collapse;
 }
 .my_table td {
-  border: 1px solid #000;
+  border: 2px solid var(--themeColor);
   padding: 20px 10px;
 }
 .clients_section .comment {
   font-size: 18px;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   display: inline-block;
   margin-left: 350px;
   padding: 15px 171px 15px 0;
@@ -322,7 +373,6 @@ main {
 
 /*=== START OF FOOTER SECTION ===*/
 footer {
-  background-color: greenyellow;
   height: auto;
   display: flex;
   justify-content: space-evenly;
@@ -342,9 +392,141 @@ footer div ul li a:hover {
 }
 /*==== END OF FOOTER SECTION ====*/
 
+.after_footer nav {
+  display: flex;
+  justify-content: center;
+  transition: 0.4s;
+
+}
+.after_footer nav ul {
+  margin-left: 0;
+}
+.after_footer nav li {
+  margin: 0 3px;
+}
+.after_footer nav ul li a {
+  background-color: var(--themeColor);
+  padding: 14px 44px;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.after_footer nav ul li a:hover {
+  background-color: var(--sideBGcolor);
+  color: var(--bgColor);
+}
+
+
 h1 {
   font-size: 44px;
   padding-left: 200px;
   padding-right: 200px;
 
 }
+
+
+
+/*===== CONTACT PAGE =====*/
+main {
+  padding: 30px 0;
+}
+
+
+.close_button {
+  margin: 20px 0 30px 0;
+}
+.close_button a {
+  background-color: var(--themeColor);
+  text-decoration: none;
+  color: #000;
+  padding: 14px 44px;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.close_button a:hover {
+  background-color: var(--sideBGcolor);
+  color: var(--bgColor);
+}
+
+.for_enquiry {
+  padding: 30px 0 40px 150px;
+}
+.for_enquiry ul {
+  list-style: none;
+  font-size: 30px;
+  font-weight: 300;
+}
+.for_enquiry ul li a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2px solid #000;
+}
+
+.contactPage_footer {
+  display: flex;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: auto;
+  margin-left: 150px;
+  margin-right: 150px;
+} 
+
+
+.reachout_link {
+  display: flex;
+  justify-content: end;
+  padding: 33px 0 45px 0;
+}
+.reachout_link ul {
+  list-style: none;
+}
+.reachout_link ul li {
+  font-size: 20px;
+}
+.reachout_link ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.4s;
+}
+.reachout_link ul li a:hover {
+  border-bottom: 1px solid #000;
+}
+/*===== END OF CONTACT PAGE =====*/
+
+
+
+/*====== TRANSITIONNING ======*/
+/* .page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1000ms ease-in-out;
+}
+
+.hidden {
+  transform: translateX(-100%);
+} */
+
+/*====== TRANSITIONNING END ======*/
+
+
+.box {
+  
+  animation: move 15s infinite;
+}
+
+@keyframes move {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(0, -100px); }
+  50% { transform: translate(100px, -100px); }
+  75% { transform: translate(100px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+
