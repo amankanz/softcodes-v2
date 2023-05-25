@@ -529,8 +529,9 @@ aside {
   background-color: pink;
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   z-index: 99;
+  scroll-behavior: smooth;
   
 }
 aside .filter_text {

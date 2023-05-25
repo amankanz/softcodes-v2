@@ -28,3 +28,25 @@ boxes.forEach(box => {
   box.style.animationDelay = `${randomDelay}s`;
 });
 
+
+/*=== START OF SIDEBAR === */
+window.addEventListener('scroll', function() {
+  var sidebar = document.querySelector('.sidebar');
+  var container = document.querySelector('.serivice_section');
+  var containerRect = container.getBoundingClientRect();
+  var sidebarRect = sidebar.getBoundingClientRect();
+  var containerTop = containerRect.top;
+  var containerBottom = containerRect.bottom - sidebarRect.height;
+
+  if (window.pageYOffset >= containerTop && window.pageYOffset <= containerBottom) {
+    sidebar.style.top = window.pageYOffset - containerTop + 'px';
+  } else if (window.pageYOffset > containerBottom) {
+    sidebar.style.top = containerBottom - containerTop + 'px';
+  } else {
+    sidebar.style.top = '0';
+  }
+});
+
+
+/*=== END OF SIDEBAR === */
+

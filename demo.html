@@ -7,23 +7,39 @@
   <title>Static Sidebar</title>
   <style>
 
-    .conteinr {
+    .container {
       position: relative;
       display: flex;
+      background-color: lightblue;
     }
 
     .sidebar {
-      position: fixed;
+      position: absolute;
       color: aliceblue;
-      left: 0;
-      top: 0;
+
       width: 250px;
-      height: 100%;
+      height: 250px;
       background-color: darkblue;
+      overflow-y: auto;
     }
 
     .content {
-      flex-grow: 1;
+      margin-left: 250px;
+      background-color: pink;
+      width: 800px;
+      height: 600px;
+
+    }
+
+
+
+    .container2 {
+      background-color: aquamarine;
+      height: 100%;
+      margin-top: 300px;
+    }
+    .section {
+      background-color: brown;
     }
 
   </style>
@@ -37,7 +53,42 @@
     <div class="content">
       <!--Main content-->
       <h2>Main content</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nihil nesciunt quaerat magni veniam impedit maiores debitis ratione quasi quas ipsum rerum, dolorum optio neque, accusamus ad labore! Eligendi omnis ea error, quaerat minima dolores delectus incidunt. In, totam repellat.</p>
     </div>
   </div>
+
+  <div class="container2">
+    <div class="section">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellendus molestias quas laborum, officia error ipsam natus ea voluptatem, ab pariatur aperiam animi veniam consectetur magni nisi! Eos dolorem provident excepturi voluptatum, porro vero consequatur reprehenderit cupiditate eum nesciunt doloribus animi illo autem impedit inventore nostrum nihil laudantium?
+    </div>
+    <div class="section2">
+      <div class="box"></div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam neque voluptatem est, libero ut quidem dolorum dignissimos cum tenetur? Ab praesentium quaerat esse in quibusdam dicta itaque magni, eveniet quas possimus, est accusantium atque sequi et? Deserunt, vitae vel sed minima cupiditate explicabo eligendi, dolores rem reiciendis doloribus labore hic doloremque cumque dolor molestias dolorum provident, delectus exercitationem necessitatibus.</div>
+    </div>
+  </div>
+
+
+
+  <script>
+
+
+    window.addEventListener('scroll', function() {
+      var sidebar = document.querySelector('.sidebar');
+      var container = document.querySelector('.container');
+      var containerRect = container.getBoundingClientRect();
+      var sidebarRect = sidebar.getBoundingClientRect();
+      var containerTop = containerRect.top;
+      var containerBottom = containerRect.bottom - sidebarRect.height;
+
+      if (window.pageYOffset >= containerTop && window.pageYOffset <= containerBottom) {
+        sidebar.style.top = window.pageYOffset - containerTop + 'px';
+      } else if (window.pageYOffset > containerBottom) {
+        sidebar.style.top = containerBottom - containerTop + 'px';
+      } else {
+        sidebar.style.top = '0';
+      }
+    });
+
+  </script>
 </body>
 </html>
