@@ -521,12 +521,17 @@ main {
 
 /*===== SERVICE PAGE =====*/
 
+.main_section_servicepage {
+  position: relative;
+  height: auto;
+}
 aside {
   background-color: pink;
   display: flex;
   flex-direction: column;
-  /* position: fixed;
-  z-index: 99; */
+  position: fixed;
+  z-index: 99;
+  
 }
 aside .filter_text {
   font-size: 18px;
@@ -641,3 +646,28 @@ aside .filter_list ul li a:hover {
 
 /*===== END OF SERVICE PAGE =====*/
 
+
+/*== START OF SEARCH SECTION ===*/
+.search_section {
+  background-color: pink;
+  width: auto;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin-top: 60px;
+  margin-left: 440px;
+
+}
+.search_section ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+.search_section ul li {
+  padding: 10px 0;
+}
+.search_section ul li a {
+  text-decoration: none;
+  font-size: 18px;
+}
+/*== END OF SEARCH SECTION ===*/

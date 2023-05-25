@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Sidebar</title>
+  <style>
+
+    .conteinr {
+      position: relative;
+      display: flex;
+    }
+
+    .sidebar {
+      position: fixed;
+      color: aliceblue;
+      left: 0;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      background-color: darkblue;
+    }
+
+    .content {
+      flex-grow: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <!--Sidebar content-->
+      <h2>Sidebar</h2>
+    </div>
+    <div class="content">
+      <!--Main content-->
+      <h2>Main content</h2>
+    </div>
+  </div>
+</body>
+</html>
