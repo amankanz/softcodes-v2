@@ -52,11 +52,14 @@ nav {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.nav_list {
+  margin-left: 150px;
+
+}
 nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  margin-left: 150px;
 }
 
 

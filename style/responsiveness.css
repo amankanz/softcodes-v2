@@ -1,15 +1,81 @@
 /*=== START Homepage Mobile view ===*/
 @media(max-width: 395px) {
 
+  /*=== START OF HEADER SECTION ===*/
   nav {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    padding-top: 30px;
-    padding-bottom: 30px;
+    align-items: center;
+
   }
 
+  .nav_list {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  /*=== END OF HEADER SECTION ===*/
+
+  /*=== START OF MAIN SECTION ===*/
+  .gallery_container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery_3, .gallery_5 {
+    display: none;
+  }
+  .gallery_1, .gallery_2, .gallery_3, .gallery_4, .gallery_5, .gallery_6, .gallery_7 {
+    position: static;
+  }
+
+  .gallery_1 {
+    height: 180px;
+    width: 180px;
+  }
+  .gallery_2 {
+    height: 200px;
+    width: 200px;
+  }
+  .gallery_4 {
+    height: 160px;
+    width: 160px;
+  }
+  .gallery_6 {
+    height: 100px;
+    width: 100px;
+  }
+ /*=== END OF HERO SECTION ===*/ 
+
+ .introtext div {
+  margin-left: 0;
+  padding-right: 23px;
+  border-top: 3px solid #000;
+  font-size: 50px;
+  font-weight: 600;
+  display: inline-block;
   
+}
+.introtext p {
+  display: inline-block;
+  font-size: 20px;
+  text-align: start;
+  margin-left: -280px;
+  padding-right: 50px;
+  margin: 20px 0;
+
+}
+.button_itro {
+
+  margin-left: 280px;
+}
+
+
+  /*=== END OF MAIN SECTION ===*/
+
+
 
 }
 
