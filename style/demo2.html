@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Static Sidebar</title>
+  <title>Sidebar 2</title>
   <style>
 
-    .container {
+  .container {
       position: relative;
       display: flex;
-      background-color: lightblue;
+      background-color: #0000FF;
+      overflow: hidden;
     }
 
+
     .sidebar {
-      position: absolute;
+      position: sticky;
       color: aliceblue;
       bottom: 100px;
 
@@ -49,12 +51,22 @@
   <div class="container">
     <div class="sidebar">
       <!--Sidebar content-->
+      <h1>Demo 2</h1>
       <h2>Sidebar</h2>
     </div>
     <div class="content">
       <!--Main content-->
       <h2>Main content</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nihil nesciunt quaerat magni veniam impedit maiores debitis ratione quasi quas ipsum rerum, dolorum optio neque, accusamus ad labore! Eligendi omnis ea error, quaerat minima dolores delectus incidunt. In, totam repellat.</p>
+    </div>
+
+    <div class="green">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugiat deleniti dolore error, facere eius architecto quam veritatis, molestiae, laborum nihil amet. Architecto nostrum sit natus provident laudantium obcaecati deleniti et saepe sapiente sequi magni soluta aperiam esse nulla quasi odio animi ut cumque, eveniet neque alias sunt numquam nobis? Consequatur eum obcaecati doloribus numquam! Minus possimus, incidunt quisquam in, doloribus provident, perspiciatis a dignissimos quae explicabo facilis assumenda necessitatibus recusandae totam quasi. Eum sit cumque aut perferendis quaerat error?
+    </div>
+
+
+    <div class="yellow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis laudantium, optio reprehenderit minima laboriosam id vitae expedita tempora fuga non, cumque nam doloremque blanditiis saepe. Optio, magni ipsum ab doloremque temporibus ipsam sapiente esse impedit accusamus tempore unde! Tempora?
     </div>
   </div>
 
@@ -71,24 +83,20 @@
 
 
   <script>
+    const container = document.querySelector('.container');
+    const sidebar = document.querySelector('.sidebar');
+    const content = document.querySelector('.content');
 
-
-    window.addEventListener('scroll', function() {
-      var sidebar = document.querySelector('.sidebar');
-      var container = document.querySelector('.container');
-      var containerRect = container.getBoundingClientRect();
-      var sidebarRect = sidebar.getBoundingClientRect();
-      var containerTop = containerRect.top;
-      var containerBottom = containerRect.bottom - sidebarRect.height;
-
-      if (window.pageYOffset >= containerTop && window.pageYOffset <= containerBottom) {
-        sidebar.style.top = window.pageYOffset - containerTop + 'px';
-      } else if (window.pageYOffset > containerBottom) {
-        sidebar.style.top = containerBottom - containerTop + 'px';
-      } else {
-        sidebar.style.top = '0';
-      }
+    container.addEventListener('scroll', function() {
+      const sidebarScrollHeight = sidebar.scrollHeight - sidebar.clientHeight;
+      const contentScrollHeight = content.scrollHeight - content.clientHeight;
+      
+      const sidebarScrollRatio = contentScrollHeight !== 0 ? sidebarScrollHeight / contentScrollHeight : 0;
+      
+      sidebar.scrollTop = container.scrollTop * sidebarScrollRatio;
     });
+
+
 
   </script>
 </body>

@@ -1,0 +1,16 @@
+/*=== START Homepage Mobile view ===*/
+@media(max-width: 395px) {
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  
+
+}
+
+/*=== END Homepage Mobile view ===*/

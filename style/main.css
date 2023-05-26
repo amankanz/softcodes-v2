@@ -12,8 +12,8 @@
 
 /* Global variable */
 :root{
-  --sideBGcolor:#5077FF;
-  --themeColor:#FBD758;
+  --sideBGcolor:#0000FF;
+  --themeColor:#FFBF00;
   --textColor:#353535;
   --iconBGcolor:#2c2f3f;
   --bgColor:#f7f7f7;
@@ -32,6 +32,8 @@ body {
   overflow: hidden;
 
 }
+
+/*================== START OF HEADER =============*/
 
 header {
   height: auto;
@@ -429,6 +431,7 @@ h1 {
 
 
 
+
 /*===== CONTACT PAGE =====*/
 main {
   padding: 30px 0;
@@ -501,6 +504,9 @@ main {
 /*===== END OF CONTACT PAGE =====*/
 
 
+
+
+
 /*=== BOX ANIMATION ===*/
 .box {
   
@@ -519,6 +525,9 @@ main {
 
 
 
+
+
+
 /*===== SERVICE PAGE =====*/
 
 .main_section_servicepage {
@@ -531,6 +540,7 @@ aside {
   flex-direction: column;
   position: absolute;
   z-index: 99;
+  overflow-y: auto;
   scroll-behavior: smooth;
   
 }
@@ -558,12 +568,19 @@ aside .filter_list ul li a:hover {
 }
 /*=== END OF SIDEBAR FILTER SECTION ===*/
 
+
+
+
+
 .serivice_section {
   background-color: aqua;
   width: auto;
   position: relative;
 
 }
+
+
+
 
 /*=== START ROW ONE ======*/
 .container_row1 {
@@ -615,6 +632,11 @@ aside .filter_list ul li a:hover {
 }
 /*=== END OF ROW ONE ===*/
 
+
+
+
+
+
 /*=== START OF ROW TWO ===*/
 .container_row2 {
   background-color: lightgreen;
@@ -646,6 +668,10 @@ aside .filter_list ul li a:hover {
 
 
 /*===== END OF SERVICE PAGE =====*/
+
+
+
+
 
 
 /*== START OF SEARCH SECTION ===*/
