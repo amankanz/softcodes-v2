@@ -1,10 +1,138 @@
 /*=== START Homepage Mobile view ===*/
-@media(max-width: 1220px) {
-   /*=== START OF HERO SECTION ===*/
-   
+@media(max-width: 1280px) {
+   .hero_section h1 {
+    font-size: 44px;
+    padding-left: 200px;
+    padding-right: 200px;
+   }
+   .gallery_6 {
+    display: none;
+   }
+   .gallery_5, .gallery_1, .gallery_4 {
+    height: 200px;
+    width: 200px;
+  }
+  .gallery_2 {
+    height: 280px;
+    width: 280px;
+  }
+
+
+   .introtext div {
+    margin-left: 200px;
+    
+  }
+  .introtext .intro_text {
+    padding-left: 200px;
+  }
+  .project_1 {
+    height: 250px;
+    width: 250px;
+    top: 10px;
+    right: 160px;
+  }
+  .project_2 {
+    height: 250px;
+    width: 250px;
+    top: 20px;
+    right: 680px;
+  }
+  .project_3 {
+    background-color: rgb(48, 110, 204);
+    top: 140px;
+    right: 380px;
+  }
+  .project_4 {
+    background-color: rgb(194, 204, 48);
+    height: 250px;
+    width: 250px;
+    top: 420px;
+    right: 570px;
+  }
+
+  .clients_section .title {
+    padding-left: 150px;
+  }
+  .clients_section div {
+    padding-left: 150px;
+  }
+  .clients_section .comment {
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    margin-left: 150px;
+    padding: 15px 171px 15px 0;
   
-  /*=== END OF HERO SECTION ===*/ 
+  }
+  
 }
+
+@media(max-width: 1024px) {
+  .hero_section h1 {
+   font-size: 36px;
+   padding-left: 150px;
+   padding-right: 150px;
+  }
+  .gallery_2 {
+    background-color: red;
+    right: 300px;
+    top: 15px;
+    height: 200px;
+    width: 200px;
+  }
+  .gallery_3 {
+    background-color: skyblue;
+    right: 180px;
+    top: 260px;
+    height: 200px;
+    width: 200px;
+  }
+  .gallery_4 {
+    right: 400px;
+    top: 270px;
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+  }
+  .gallery_5 {
+    top: 10px;
+    right: 500px;
+    background-color: greenyellow;
+    height: 200px;
+    width: 200px;
+  }
+
+  .introtext div {
+    margin-left: 170px;
+    font-size: 40px;
+  }
+  .introtext .intro_text {
+    padding-left: 170px;
+  }
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -158,6 +158,14 @@ main {
   height: 800px;
   text-align: center;
 }
+
+h1 {
+  font-size: 44px;
+  padding-left: 200px;
+  padding-right: 200px;
+
+}
+
 .gallery_container {
   position: relative;
   display: block;
@@ -203,8 +211,8 @@ main {
 .gallery_6 {
   top: 300px;
   background-color: rgb(65, 73, 52);
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
 }
 
 /*==== END OF GALLERY SECTION ===*/
@@ -222,7 +230,6 @@ main {
   font-size: 50px;
   font-weight: 600;
   display: inline-block;
-  
 }
 .introtext .intro_text {
   font-size: 20px;
@@ -420,12 +427,7 @@ footer div ul li a:hover {
 }
 
 
-h1 {
-  font-size: 44px;
-  padding-left: 200px;
-  padding-right: 200px;
 
-}
 
 
 
