@@ -28,7 +28,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1024px;
+  width: 80%;
   overflow: hidden;
 
 }
@@ -227,7 +227,7 @@ main {
 .introtext .intro_text {
   font-size: 20px;
   text-align: start;
-  /* padding-left: 280px; */
+  padding-left: 280px;
   padding-right: 50px;
   margin: 20px 0;
 
