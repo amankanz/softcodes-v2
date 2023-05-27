@@ -224,10 +224,10 @@ main {
   display: inline-block;
   
 }
-.introtext p {
+.introtext .intro_text {
   font-size: 20px;
   text-align: start;
-  padding-left: 280px;
+  /* padding-left: 280px; */
   padding-right: 50px;
   margin: 20px 0;
 
@@ -269,9 +269,12 @@ main {
 .project_gallery {
   position: relative;
 }
-.project_1 {
+.project_1, .project_2, .project_3, .project_4,
+.project_5 {
   position: absolute;
   border-radius: 50%;
+}
+.project_1 {
   background-color: rebeccapurple;
   right: 100px;
   height: 300px;
@@ -280,8 +283,6 @@ main {
   right: 40px;
 }
 .project_2 {
-  position: absolute;
-  border-radius: 50%;
   background-color: rgb(204, 71, 48);
   right: 100px;
   height: 300px;
@@ -290,8 +291,6 @@ main {
   right: 700px;
 }
 .project_3 {
-  position: absolute;
-  border-radius: 50%;
   background-color: rgb(48, 110, 204);
   right: 100px;
   height: 300px;
@@ -301,8 +300,6 @@ main {
 }
 
 .project_4 {
-  position: absolute;
-  border-radius: 50%;
   background-color: rgb(194, 204, 48);
   right: 100px;
   height: 300px;
@@ -312,8 +309,6 @@ main {
 }
 
 .project_5 {
-  position: absolute;
-  border-radius: 50%;
   background-color: rgb(186, 175, 204);
   right: 100px;
   height: 300px;

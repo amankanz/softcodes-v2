@@ -1,5 +1,5 @@
 /*=== START Homepage Mobile view ===*/
-@media(max-width: 395px) {
+@media(max-width: 540px) {
 
   /*=== START OF HEADER SECTION ===*/
   nav {
@@ -48,34 +48,105 @@
     width: 100px;
   }
  /*=== END OF HERO SECTION ===*/ 
-
- .introtext div {
-  margin-left: 0;
-  padding-right: 23px;
-  border-top: 3px solid #000;
-  font-size: 50px;
-  font-weight: 600;
-  display: inline-block;
-  
+ .project_2 {
+  height: 200px;
+  width: 200px;
 }
-.introtext p {
-  display: inline-block;
-  font-size: 20px;
-  text-align: start;
-  margin-left: -280px;
-  padding-right: 50px;
-  margin: 20px 0;
-
+.project_3 {
+  height: 180px;
+  width: 180px;
 }
-.button_itro {
-
-  margin-left: 280px;
+.project_4 {
+  height: 190px;
+  width: 190px;
 }
 
 
   /*=== END OF MAIN SECTION ===*/
 
 
+
+}
+
+
+@media(max-width: 912px) {
+  .project_gallery {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .project_1, .project_2, .project_3, .project_4,
+  .project_5 {
+      position: static;
+      border-radius: 50%;
+  }
+  .project_4, .project_2 {
+    display: none;
+  }
+
+  .project_1 {
+    height: 240px;
+    width: 240px;
+  }
+  .project_3 {
+    height: 220px;
+    width: 220px;
+  }
+  .project_5 {
+    height: 230px;
+    width: 230px;
+  }
+
+  .button_project {
+    position: static;
+    top: 780px;
+    right: 780px;
+    margin-top: 70px;
+    
+  }
+  /*=== CLIENT SECTION ===*/
+  .clients_section .title {
+    display: block;
+    padding-left: 150px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .clients_section div {
+    padding-left: 150px;
+  }
+
+  .my_table tr:nth-child(3) td,
+  .my_table tr:nth-child(4) td {
+    display: none;
+  }
+  .my_table tr:nth-child(1) td:nth-child(n+4),
+  .my_table tr:nth-child(2) td:nth-child(n+4) {
+    display: none;
+  }
+  .my_table tr:nth-child(1) td:nth-child(3n+1),
+  .my_table tr:nth-child(2) td:nth-child(3n+1) {
+    width: 33.33%;
+  }
+
+
+  .clients_section .comment {
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 171px 15px 0;
+  
+  }
+
+
+}
+
+
+@media(max-width: 1280px) {
 
 }
 
