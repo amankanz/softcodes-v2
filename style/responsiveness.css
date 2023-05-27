@@ -1,4 +1,13 @@
 /*=== START Homepage Mobile view ===*/
+@media(max-width: 1220px) {
+   /*=== START OF HERO SECTION ===*/
+   
+  
+  /*=== END OF HERO SECTION ===*/ 
+}
+
+
+
 @media(max-width: 540px) {
 
   /*=== START OF HEADER SECTION ===*/
@@ -17,6 +26,8 @@
   /*=== END OF HEADER SECTION ===*/
 
   /*=== START OF MAIN SECTION ===*/
+
+
   .gallery_container {
     position: static;
     display: flex;
