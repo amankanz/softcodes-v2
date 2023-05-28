@@ -1,4 +1,7 @@
-/*=== START Homepage Mobile view ===*/
+
+/*==== MAX-WIDTH 1080PX ======*/
+
+/*=== START HOME PAGE ===*/
 @media(max-width: 1280px) {
   /*=== START OF HERO SECTION ===*/
    .hero_section h1 {
@@ -125,8 +128,17 @@
 
   
 }
+/*=== START HOME PAGE ===*/
+
+
+
+
+/*===========================================================*/
+
 
 /*==== MAX-WIDTH 1024PX ======*/
+
+/*=== START HOME PAGE ===*/
 @media(max-width: 1024px) {
   /*=== START OF HERO SECTION ===*/
   .hero_section {
@@ -270,8 +282,17 @@
 
 
 }
+/*=== END HOME PAGE ===*/
+
+
+
+/*==========================================================*/
+
+
 
 /*==== MAX-WIDTH 412PX ======*/
+
+/*=== START HOME PAGE ===*/
 
 @media(max-width: 412px) {
   nav {
@@ -563,6 +584,7 @@
 
 }
 
+/*=== END HOME PAGE ===*/
 
 
 
