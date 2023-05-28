@@ -310,15 +310,15 @@
     border-bottom: 1px solid #000;
   }
   .marquee_text {
-    animation: marquee 15s linear infinite;
+    animation: marquee 11s linear infinite;
     font-size: 30px;
   }
   @keyframes marquee {
     0% {
-      transform: translateX(35%);
+      transform: translateX(55%);
     }
     100% {
-      transform: translateX(-35%);
+      transform: translateX(-55%);
     }
   }
   .marquee_text p {
