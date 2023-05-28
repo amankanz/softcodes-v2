@@ -410,6 +410,95 @@
   
 }
 
+/*=== START OF PROECT SECTION ===*/
+.projects_section {
+  height: 700px;
+  text-align: center;  
+  border-bottom: 1px solid #000;
+}
+.projects_section .title {
+  font-size: 23px;
+  font-weight: 600;
+  padding: 25px 50px 0 50px;
+}
+.project_1 {
+  background-color: rebeccapurple;
+  height: 100px;
+  width: 100px;
+  top: 400px;
+  right: 140px;
+}
+.project_2 {
+  background-color: rgb(204, 71, 48);
+  height: 100px;
+  width: 100px;
+  top: 40px;
+  right: 100px;
+}
+.project_3 {
+  background-color: rgb(48, 110, 204);
+  height: 100px;
+  width: 100px;
+  top: 100px;
+  right: 200px;
+}
+.project_4 {
+  background-color: rgb(194, 204, 48);
+  height: 100px;
+  width: 100px;
+  top: 180px;
+  right: 100px;
+}
+.project_5 {
+  background-color: rgb(186, 175, 204);
+  height: 100px;
+  width: 100px;
+  top: 250px;
+  right: 210px;
+}
+.project_gallery .project_descrip {
+  font-size: 10px;
+  color: #000;
+  margin-top: 100px;
+}
+.project_3 .project_descrip {
+  margin-right: 18px;
+}
+.project_4 .project_descrip {
+  margin-left: 25px;
+}
+.project_5 .project_descrip {
+  margin-right: 25px;
+}
+.button_project {
+  position: absolute;
+  top: 550px;
+  right: 80px;
+  
+}
+.button_project a {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 40px;
+  border-radius: 5px;
+  
+}
+
+/*=== END OF PROECT SECTION ===*/
+
+/*=== START OF CLIENT SECTION ===*/
+.clients_section div {
+  padding-left: 0;
+}
+.clients_section .title {
+  display: block;
+  padding-left: 0;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+/*=== END OF CLIENT SECTION ===*/
+
 
 
 }
