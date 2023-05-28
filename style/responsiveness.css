@@ -432,7 +432,7 @@
 
   /*=== START OF PROECT SECTION ===*/
   .projects_section {
-    height: 700px;
+    height: 755px;
     text-align: center;  
     border-bottom: 1px solid #000;
   }
@@ -445,8 +445,8 @@
     background-color: rebeccapurple;
     height: 100px;
     width: 100px;
-    top: 400px;
-    right: 140px;
+    top: 455px;
+    right: 120px;
   }
   .project_2 {
     background-color: rgb(204, 71, 48);
@@ -459,40 +459,40 @@
     background-color: rgb(48, 110, 204);
     height: 100px;
     width: 100px;
-    top: 100px;
+    top: 155px;
     right: 200px;
   }
   .project_4 {
     background-color: rgb(194, 204, 48);
     height: 100px;
     width: 100px;
-    top: 180px;
+    top: 255px;
     right: 100px;
   }
   .project_5 {
     background-color: rgb(186, 175, 204);
     height: 100px;
     width: 100px;
-    top: 250px;
-    right: 210px;
+    top: 365px;
+    right: 205px;
   }
   .project_gallery .project_descrip {
     font-size: 10px;
-    color: #000;
+    color: #d15656;
     margin-top: 100px;
   }
   .project_3 .project_descrip {
     margin-right: 18px;
   }
   .project_4 .project_descrip {
-    margin-left: 25px;
+    margin-left: 27px;
   }
   .project_5 .project_descrip {
     margin-right: 25px;
   }
   .button_project {
     position: absolute;
-    top: 550px;
+    top: 605px;
     right: 80px;
     
   }
