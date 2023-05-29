@@ -167,9 +167,36 @@ h1 {
   position: relative;
   display: block;
 }
+
+
+
+@keyframes moveBox {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery_1, .gallery_2, .gallery_3
+  .gallery_4, .gallery_5, .gallery_6 {
+    animation: none;
+    transform: none;
+  }
+}
+
+
+
 .gallery_1, .gallery_2, .gallery_3, .gallery_4, .gallery_5, .gallery_6, .gallery_7 {
   position: absolute;
   border-radius: 50%;
+  animation: moveBox 3s infinite;
+
 }
 .gallery_1 {
   background-color: rebeccapurple;
