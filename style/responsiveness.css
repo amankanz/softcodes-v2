@@ -476,7 +476,7 @@
   }
   .project_gallery .project_descrip {
     font-size: 10px;
-    color: #d15656;
+    color: #000;
     margin-top: 100px;
   }
   .project_3 .project_descrip {
@@ -657,41 +657,34 @@
   }
   .gallery_1 {
     background-color: rebeccapurple;
-    right: 100px;
-    top: 140px;
-    height: 100px;
-    width: 100px;
+    right: 170px;
+    top: 110px;
+    height: 110px;
+    width: 110px;
   }
   .gallery_2 {
     background-color: red;
-    right: 180px;
-    top: 30px;
-    height: 100px;
-    width: 100px;
+    right: 20px;
+    top: 90px;
+    height: 110px;
+    width: 110px;
   }
   .gallery_3 {
-    background-color: skyblue;
-    right: 100px;
-    top: 210px;
-    height: 100px;
-    width: 100px;
     display: none;
   }
   .gallery_4 {
-    /* right: 215px;
-    top: 200px;
+    right: 100px;
+    top: 190px;
     background-color: aqua;
-    height: 95px;
-    width: 95px; */ 
-    /* Re-activate the above codes if needed */
-    display: none;
+    height: 110px;
+    width: 110px; 
   }
   .gallery_5 {
-    top: 210px;
-    right: 180px;
+    top: 15px;
+    right: 100px;
     background-color: greenyellow;
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
   }
   /*=== END OF HERO SECTION ===*/
   .introtext .intro_title {
@@ -724,7 +717,154 @@
     border-radius: 5px;
     
   }
+    /*=== START OF PROECT SECTION ===*/
+    .projects_section {
+      height: 700px;
+      text-align: center;  
+      border-bottom: 1px solid #000;
+    }
+    .projects_section .title {
+      font-size: 23px;
+      font-weight: 600;
+      padding: 25px 50px 0 50px;
+    }
+    .project_1 {
+      background-color: rebeccapurple;
+      height: 120px;
+      width: 120px;
+      top: 170px;
+      right: 160px;
+    }
+    .project_2 {
+      background-color: rgb(204, 71, 48);
+      height: 120px;
+      width: 120px;
+      top: 10px;
+      right: 20px;
+    }
+    .project_3 {
+      background-color: rgb(48, 110, 204);
+      height: 120px;
+      width: 120px;
+      top: 20px;
+      right: 160px;
+    }
+    .project_4 {
+      background-color: rgb(194, 204, 48);
+      height: 120px;
+      width: 120px;
+      top: 160px;
+      right: 20px;
+    }
+    .project_5 {
+      background-color: rgb(186, 175, 204);
+      height: 120px;
+      width: 120px;
+      top: 310px;
+      right: 90px;
+    }
+    .project_gallery .project_descrip {
+      font-size: 10px;
+      color: #000;
+      margin-top: 120px;
+    }
+    .project_3 .project_descrip {
+      margin-right: 18px;
+    }
+    .project_4 .project_descrip {
+      margin-left: 27px;
+    }
+    .project_5 .project_descrip {
+      margin-right: 25px;
+    }
+    .button_project {
+      position: absolute;
+      top: 500px;
+      right: 80px;
+      
+    }
+    .button_project a {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 12px 40px;
+      border-radius: 5px;
+      
+    }
+  
+    /*=== END OF PROECT SECTION ===*/
 
+    /*=== START OF CLIENT SECTION ===*/
+    .clients_section div {
+      padding-left: 0;
+    }
+    .clients_section .title {
+      display: block;
+      padding-left: 0;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+  
+  
+    .my_table td {
+      padding: 15px 5px;
+      font-size: 12px;
+    }
+  
+    .my_table tr:nth-child(3) td,
+    .my_table tr:nth-child(4) td {
+      display: none;
+    }
+    .my_table tr:nth-child(1) td:nth-child(n+4),
+    .my_table tr:nth-child(2) td:nth-child(n+4) {
+      display: none;
+    }
+    .my_table tr:nth-child(1) td:nth-child(3n+1),
+    .my_table tr:nth-child(2) td:nth-child(3n+1) {
+      width: 33.33%;
+    }
+  
+    .clients_section .comment {
+      font-size: 11px;
+      border-bottom: 1px solid #000;
+      display: inline-block;
+      text-align: center;
+      margin-left: 0;
+      padding: 10px 0 10px 0;
+  
+    }
+    /*=== END OF CLIENT SECTION ===*/
+  
+    /*=== START OF FOOTER SECTION ===*/
+    footer {
+      height: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px 0;
+    }
+    footer div {
+      margin-bottom: 20px;
+    }
+    footer div:nth-child(1) ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer div:nth-child(4) ul {
+      display: flex;
+    }
+    footer div ul li a {
+      text-decoration: none;
+      color: #000;
+      transition: 0.4s;
+      margin-right: 15px;
+    }
+    /*=== END OF FOOTER SECTION ===*/
+    .after_footer nav ul li a {
+      display: none;
+    }  
 
 }
 /*=== END HOME PAGE ===*/
