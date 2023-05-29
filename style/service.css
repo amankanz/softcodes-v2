@@ -1,0 +1,18 @@
+@media(max-width: 600px) {
+  aside {
+    display: none;
+    
+  }
+  .container_row1 {
+    display: none;
+  }
+  .container_row2 {
+    display: none;
+  }
+
+
+  .search_section {
+    display: none;
+  
+  }
+}
