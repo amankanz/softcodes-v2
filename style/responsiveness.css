@@ -2,9 +2,9 @@
 /*==== MAX-WIDTH 1080PX ======*/
 
 /*=== START HOME PAGE ===*/
-@media(max-width: 1280px) {
+/* @media(max-width: 1280px) { */
   /*=== START OF HERO SECTION ===*/
-   .hero_section h1 {
+   /* .hero_section h1 {
     font-size: 44px;
     padding-left: 200px;
     padding-right: 200px;
@@ -47,11 +47,11 @@
   .gallery_6 {
     display: none;
   }
-  
+   */
 
 
   /*=== END OF HERO SECTION ===*/
-
+/* 
 
    .introtext div {
     margin-left: 200px;
@@ -59,10 +59,10 @@
   }
   .introtext .intro_text {
     padding-left: 200px;
-  }
+  } */
 
   /*=== START OF PROJECT SECTION ===*/
-
+/* 
   .project_1 {
     background-color: rebeccapurple;
     height: 290px;
@@ -104,12 +104,12 @@
     top: 750px;
     right: 680px;
     
-  }
+  } */
   
   /*=== END OF PROJECT SECTION ===*/
 
   /*=== START OF CLIENT SECTION ===*/
-
+/* 
   .clients_section .title {
     padding-left: 150px;
   }
@@ -123,11 +123,11 @@
     margin-left: 150px;
     padding: 15px 171px 15px 0;
   
-  }
+  } */
   /*=== END OF CLIENT SECTION ===*/
 
   
-}
+
 /*=== START HOME PAGE ===*/
 
 
@@ -139,9 +139,9 @@
 /*==== MAX-WIDTH 1024PX ======*/
 
 /*=== START HOME PAGE ===*/
-@media(max-width: 1024px) {
+/* @media(max-width: 1024px) {
   /*=== START OF HERO SECTION ===*/
-  .hero_section {
+  /* .hero_section {
     height: 620px;
   }
   .hero_section h1 {
@@ -182,10 +182,10 @@
     background-color: greenyellow;
     height: 200px;
     width: 200px;
-  }
+  } */
   /*=== END OF HERO SECTION ===*/
 
-  .introtext div {
+  /* .introtext div {
     margin-left: 170px;
     font-size: 40px;
   }
@@ -198,10 +198,10 @@
     padding: 12px 40px;
     border-radius: 7px;
     
-  }
+  } */
 
   /*=== START OF PROJECT SECTION ===*/
-  .projects_section {
+  /* .projects_section {
     height: 800px;
   }
   .projects_section .title {
@@ -254,13 +254,13 @@
     font-weight: 600;
     padding: 12px 40px;
     
-  }
+  } */
   /*=== END OF PROJECT SECTION ===*/
 
 
   /*=== START OF CLIENT SECTION ===*/
 
-  .clients_section .title {
+  /* .clients_section .title {
     padding-left: 100px;
   }
   .clients_section div {
@@ -269,10 +269,10 @@
   .clients_section .comment {
     margin-left: 100px;
   
-  }
+  } */
   /*=== END OF CLIENT SECTION ===*/
 
-  footer div ul li a {
+  /* footer div ul li a {
     font-size: 14px;
   }
   .after_footer nav ul li a {
@@ -281,7 +281,7 @@
   }
 
 
-}
+} */ 
 /*=== END HOME PAGE ===*/
 
 
@@ -290,14 +290,6 @@
 
 
 
-@media(max-width: 412px) {
-
-
-
-
-
-
-}
 
 
 
@@ -306,7 +298,7 @@
 /*==== MAX-WIDTH 600PX ======*/
 
 /*=== END HOME PAGE ===*/
-@media(max-width: 600px) {
+/* @media(max-width: 600px) {
 
   nav {
     display: flex;
@@ -354,9 +346,9 @@
     height: 20px;
     width: 20px;
     margin: 0 20px;
-  }
+  } */
   /*=== START OF HERO SECTION ===*/
-  .hero_section {
+  /* .hero_section {
     height: 450px;
   }
   .hero_section h1 {
@@ -394,9 +386,9 @@
     background-color: greenyellow;
     height: 150px;
     width: 150px;
-  }
+  } */
   /*=== END OF HERO SECTION ===*/
-  .introtext .intro_title {
+  /* .introtext .intro_title {
     margin-left: 0px;
     padding-right: 23px;
     font-size: 30px;
@@ -426,7 +418,7 @@
     
   }
     /*=== START OF PROECT SECTION ===*/
-    .projects_section {
+    /* .projects_section {
       height: 700px;
       text-align: center;  
     }
@@ -496,12 +488,12 @@
       padding: 12px 40px;
       border-radius: 5px;
       
-    }
+    } */ */
   
     /*=== END OF PROECT SECTION ===*/
 
     /*=== START OF CLIENT SECTION ===*/
-    .clients_section div {
+    /* .clients_section div {
       padding-left: 0;
     }
     .clients_section .title {
@@ -539,11 +531,11 @@
       margin-left: 5px;
       padding: 10px 10px 10px 10px;
   
-    }
+    } */
     /*=== END OF CLIENT SECTION ===*/
   
     /*=== START OF FOOTER SECTION ===*/
-    footer {
+    /* footer {
       height: auto;
       display: flex;
       align-items: center;
@@ -567,13 +559,13 @@
       color: #000;
       transition: 0.4s;
       margin-right: 15px;
-    }
+    } */
     /*=== END OF FOOTER SECTION ===*/
-    .after_footer nav ul li a {
+    /* .after_footer nav ul li a {
       display: none;
-    }  
+    }   */
 
-}
+
 /*=== END HOME PAGE ===*/
 
 
